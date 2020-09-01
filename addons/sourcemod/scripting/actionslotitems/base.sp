@@ -1148,6 +1148,8 @@ methodmap ActionSlotItem
 				ThrowError("Weapon must be a custom action slot item!");
 			
 			weaponData.ReloadFinishTime = time;
+
+			TheActionSlotItems.SetActionSlotItemWeaponData(this.Entity, weaponData);
 		}
 	}
 
